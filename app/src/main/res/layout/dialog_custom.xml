@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="533dp"
     android:layout_height="wrap_content"
-    android:minHeight="266dp"
     android:background="@drawable/background_dialog"
-    android:clipChildren="false">
+    android:clipChildren="false"
+    android:minHeight="266dp">
 
-    <TextView
-        android:id="@+id/dialog_title"
-        android:layout_width="533dp"
-        android:layout_height="67dp"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/background_dialog_header"
-        android:ellipsize="end"
-        android:gravity="center"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:textColor="@color/colorTextNormal"
-        android:textSize="@dimen/sizeTextDialogTitle" />
-
-    <TextView
-        android:id="@+id/dialog_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="117dp"
-        android:gravity="center"
-        android:maxWidth="500dp"
-        android:textColor="@color/colorTextNormal"
-        android:textSize="30sp" />
-
-    <Button
+    <com.feizai.mydialog.view.MarqueeButton
         android:id="@+id/btn_ok"
         android:layout_width="145dp"
         android:layout_height="54dp"
@@ -42,9 +17,14 @@
         android:background="@drawable/background_button_nor"
         android:text="@string/str_ok"
         android:textColor="@color/colorTextNormal"
+        android:singleLine="true"
+        android:focusable="true"
+        android:selectAllOnFocus="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
         android:textSize="20sp" />
 
-    <Button
+    <com.feizai.mydialog.view.MarqueeButton
         android:id="@+id/btn_cancel"
         android:layout_width="145dp"
         android:layout_height="54dp"
@@ -56,5 +36,43 @@
         android:background="@drawable/background_button_nor"
         android:text="@string/str_cancel"
         android:textColor="@color/colorTextNormal"
+        android:singleLine="true"
+        android:focusable="true"
+        android:selectAllOnFocus="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
         android:textSize="20sp" />
+
+    <com.feizai.mydialog.view.MarqueeTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="533dp"
+        android:layout_height="67dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_dialog_header"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/colorTextNormal"
+        android:textSize="@dimen/sizeTextDialogTitle" />
+
+    <com.feizai.mydialog.view.MarqueeTextView
+        android:id="@+id/dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="500dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/colorTextNormal"
+        android:textSize="30sp" />
 </RelativeLayout>

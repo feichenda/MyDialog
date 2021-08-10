@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (dialog == null) {
-                    dialog = new CustomDialog(MainActivity.this);
+                    dialog = CustomDialog.getInstance(MainActivity.this);
                 }
-                dialog.setTitle("hhhh");
-                dialog.setContent("oooo");
-                dialog.setBtnOkText("myok");
-                dialog.setBtnCancelText("mycancel");
+                dialog.setTitle("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+                dialog.setContent("ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo");
+                dialog.setBtnOkText("myoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooook");
+                dialog.setBtnCancelText("mycanccccccccccccccccccccccccccccccccccccccccccccccccccccvvvvvvvvel");
                 dialog.setOkListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

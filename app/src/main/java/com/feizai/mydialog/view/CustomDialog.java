@@ -33,14 +33,14 @@ public class CustomDialog extends BaseDialog {
 
     private int resId_ok = 0;
     private int resId_cancel = 0;
-    public static CustomDialog instance;
+    private static CustomDialog instance;
 
-    public CustomDialog(Context context) {
+    private CustomDialog(Context context) {
         super(context, R.style.MyDialog);
     }
 
-    public CustomDialog(Context context, int themeResId) {
-        super(context, R.style.MyDialog);
+    private CustomDialog(Context context, int themeResId) {
+        super(context, themeResId);
     }
 
     public static CustomDialog getInstance(Context mContext){

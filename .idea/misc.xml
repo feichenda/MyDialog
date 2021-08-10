@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/workspaces/MyDialog/app/src/main/res/drawable/background_button_nor.xml" value="0.3453703703703704" />
+        <entry key="..\:/workspaces/MyDialog/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3453703703703704" />
         <entry key="..\:/workspaces/MyDialog/app/src/main/res/layout/activity_main.xml" value="0.14447463768115942" />
         <entry key="..\:/workspaces/MyDialog/app/src/main/res/layout/dialog_costom.xml" value="0.3723958333333333" />
-        <entry key="..\:/workspaces/MyDialog/app/src/main/res/layout/dialog_custom.xml" value="0.264" />
+        <entry key="..\:/workspaces/MyDialog/app/src/main/res/layout/dialog_custom.xml" value="0.2" />
       </map>
     </option>
   </component>
